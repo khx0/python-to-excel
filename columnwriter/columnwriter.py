@@ -3,15 +3,12 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: nikolas.schnellbaecher@bioquant.uni-heidelberg.de
-# date: 2018-05-19
+# date: 2019-02-03
 # file: columnwriter.py
 ##########################################################################################
 
-import time
 import datetime
-import sys
 import os
-import math
 import numpy as np
 
 def ensure_dir(dir):
@@ -27,7 +24,7 @@ OUTDIR = os.path.join(BASEDIR, 'out')
 
 if __name__ == '__main__':
     
-    ### create dummy data columns of different length
+    # create dummy data columns of different length
     n1 = 10
     c1 = np.linspace(0.0, 1.0, n1)
     
@@ -54,6 +51,3 @@ if __name__ == '__main__':
     worksheet.write_column(0, 3, c4)
     
     wb.close()
-    
-    
-    
